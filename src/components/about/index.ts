@@ -4,10 +4,18 @@ import './index.scss'
 
 export default {
 	view (vnode) {
-		return m('.page.about', [
-			m(nav),
-			m('h1', 'About'),
-			m('p', 'This is the about page. Stuff about the app.')
-		])
+        return m("form", [
+            m("label.label", "Name (optional)"),
+            m("input.input[type=text][placeholder=Name]"),
+            m("label.label", "Email"),
+            m("input.input[type=text][placeholder=Email]"),
+			m(".tagline", "OR"),
+            m("label.label", "Twitter id"),
+            m("input.input[type=text][placeholder=Twitter]"),
+			m(".tagline", "OR"),
+            m("label.label", "Reddit"),
+            m("input.input[type=text][placeholder=Reddit]"),
+            m("button.button[type=button]", "Save"),
+        ])
 	}
 } as m.Component<{}, {}>
