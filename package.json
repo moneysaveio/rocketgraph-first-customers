@@ -11,7 +11,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "mithril": "^1.1.1"
+    "mithril": "^1.1.1",
+    "pizzly-js": "^0.2.8"
   },
   "devDependencies": {
     "@types/mithril": "^1.1.2",
