@@ -3,13 +3,13 @@ import nav from '../nav';
 import './index.scss';
 import Pizzly from 'pizzly-js'
 
-const pizzly = new Pizzly({ host: 'https://rocketgraph-first-customers.herokuapp.com' }) // Initialize Pizzly
-const myAPI = pizzly.integration('rocketgraph-first-customers-api-name') // Replace with the API slugname
+// const pizzly = new Pizzly({ host: 'https://rocketgraph-first-customers.herokuapp.com' }) // Initialize Pizzly
+// const myAPI = pizzly.integration('rocketgraph-first-customers-api-name') // Replace with the API slugname
 
-myAPI
-  .connect()
-  .then(({ authId }) => console.log('Sucessfully connected!', authId))
-  .catch(console.error)
+// myAPI
+//   .connect()
+//   .then(({ authId }) => console.log('Sucessfully connected!', authId))
+//   .catch(console.error)
 
 export default {
 	view (vnode) {
