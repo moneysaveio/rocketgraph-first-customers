@@ -5,8 +5,7 @@ import home from './components/home'
 import about from './components/about'
 
 m.route(document.body, '/', {
-	'/': home,
-	'/about': about
+	'/': about,
 })
 
 ///////////////////////////////////////////////////////////////////////////////
