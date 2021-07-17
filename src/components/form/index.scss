@@ -23,15 +23,18 @@ body {
 		background: #eee;
 		border: 1px solid #ddd;
 		border-radius: 3px;
-		color: #333;
+		color: #fff;
+		background-color: #238636;
+		border-color: #2ea043;
 		display: inline-block;
 		margin: 0 0 10px;
 		padding: 10px 15px;
 		text-decoration: none;
+		width: 100%;
 	}
 
 	.button:hover {
-		background: #e8e8e8;
+		background-color: #2ebc4f;
 	}
 }
 .about {
