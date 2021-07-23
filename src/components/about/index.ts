@@ -66,21 +66,32 @@ function consoleText(words: any, id: any, colors: any) {
 
 export default {
 	oncreate () {
-		consoleText(['Your Postgres on steroids!'], 'text',['tomato','rebeccapurple','lightblue']);
+		consoleText(['Your Postgres on steroids!'], 'text',['tomato']);
 	},
 	view (vnode: any) {
         return m("div", [
 			m("div.stars"),
 			m("div.twinkling"),
 			m("div.clouds"),
-			m("h3", "Rocket Graph"),
-			m("h3", "One click Hasura + Postgres deployment"),
-			m("h3", "with authentication and S3 storage support right out of the box."),
+			m("div.title-container", [
+				// m("div.two.alt-two",
+				// 	m("h1", [
+				// 		"alternate",
+				// 		m("span", "Example Tagline Text")
+				// 	])
+				// ),
+				m("h1.title", "Rocket Graph"),
+				// m("h2.subtitle", "One click Hasura + Postgres deployment"),
+				// m("h2.subtitle", "with authentication and S3 storage support right out of the box."),
+			]),
 			m("div.console-container", [
 				m("span", {id: "text"}),
 				m("div.console-underscore", {id: 'console'}, m.trust("&#95")),
 			]),
-			m("h3", "Basically your Postgres DB on steroids!"),
+			m("row", [
+
+			]),
+			// m("h3", "Basically your Postgres DB on steroids!"),
             // m(Form.default),
         ])
 	}

@@ -30,6 +30,7 @@
     "stylus": "^0.54.8",
     "stylus-loader": "^6.1.0",
     "susy": "^3.0.7",
+    "tailwindcss": "^2.2.7",
     "tslint": "^5.2.0",
     "tslint-microsoft-contrib": "git://github.com/Microsoft/tslint-microsoft-contrib.git#releases",
     "typescript": "^2.3.2",
