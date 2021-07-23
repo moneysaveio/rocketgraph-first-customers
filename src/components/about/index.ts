@@ -15,11 +15,14 @@ console.log("Form", Form);
 export default {
 	view (vnode: any) {
         return m("div", [
-			m("h1", "Rocket Graph"),
+			m("div.stars"),
+			m("div.twinkling"),
+			m("div.clouds"),
+			m("h3", "Rocket Graph"),
 			m("h3", "One click Hasura + Postgres deployment"),
 			m("h3", "with authentication and S3 storage support right out of the box."),
 			m("h3", "Basically your Postgres DB on steroids!"),
-            m(Form.default),
+            // m(Form.default),
         ])
 	}
 };
