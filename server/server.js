@@ -39,7 +39,7 @@ app.get('/', function(req, res) {
 	res.sendFile(HTML_FILE);
 });
 
-//The REST routes for "todos".
+//The REST routes for "customers".
 app.route('/add')
   .post(createCustomerItem);
 
