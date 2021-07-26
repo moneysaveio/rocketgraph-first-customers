@@ -85,7 +85,7 @@ npm-debug.log*
 testem.log
 
 # App generated & config files
-/public/css/*.css
-/public/css/*.map
-/public/js/*.js
-/public/js/*.map
+# /public/css/*.css
+# /public/css/*.map
+# /public/js/*.js
+# /public/js/*.map

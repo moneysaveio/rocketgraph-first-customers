@@ -67,6 +67,28 @@ function consoleText(words: any, id: any, colors: any) {
 export default {
 	oncreate () {
 		consoleText(['Your Postgres on steroids!'], 'text',['tomato']);
+		window.onload = (function() {
+			const butt = document.getElementById("submit-button") as any;
+			console.log(butt);
+			butt.onclick = () => {
+				const content = {
+					method: "POST",
+					url: " http://localhost:8000/add",
+					body: JSON.stringify({
+						name: "kaushik",
+						email: "kaushik.varanasi@gmail.com"
+					}),
+					config: function(xhr: any) {
+						xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+						xhr.setRequestHeader('Content-Type', "application/json;charset=UTF-8")
+					  }
+				};
+				m.request(content)
+				.then(function(result) {
+					console.log(result);
+				})
+			}
+		})
 	},
 	view (vnode: any) {
         return m("div", [
