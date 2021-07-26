@@ -67,6 +67,7 @@ Thumbs.db
 # #####################
 /node/**
 /node_modules/**
+server/node_modules/**
 .npm
 .nodemonignore
 npm-debug.log*
